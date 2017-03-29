@@ -1,11 +1,12 @@
-# Tensorflow GPU installation on Windows 10 64bit       
-- Check if your NVIDIA GPU is [supported](https://developer.nvidia.com/cuda-gpus) for Tensorflow and has Compute Capability >= 3.0    
+# Tensorflow CPU/GPU installation on Windows 10 64bit       
+- If you are installing Tensorflow GPU version, check if your NVIDIA GPU is [supported](https://developer.nvidia.com/cuda-gpus) for Tensorflow and has Compute Capability >= 3.0     
 - As on 24/3/2017 Tensorflow is supported only on 2.7.x and 3.5.x. So make sure you have this version [Python 64bit](https://www.python.org/downloads/) installed    
 - Add Python directory to your [environment variable](http://www.netinstructions.com/content/images/2016/12/adding-cudnn-to-your-path-tensorflow-windows-7.png) after installation      
             
   
-## Installation steps   
-```python -m pip install tensorflow-gpu```       
+## Tensorflow installation steps   
+```python -m pip install tensorflow-gpu # for Tensorflow GPU installation```        
+```python -m pip install tensorflow # for Tensorflow CPU installation```     
 - Put the tensorflowvisu.mplstyle in C:\Users\Pratik\AppData\Local\Programs\Python\Python35\Lib\site-packages\matplotlib\mpl-data\stylelib    
 - Install [visual studio](https://www.visualstudio.com/downloads) community edition      
 - Install [NVIDIA Cuda](https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_win10-exe)      
